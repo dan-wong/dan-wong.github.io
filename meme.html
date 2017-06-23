@@ -39,10 +39,21 @@
                 <br>
                 <div class="form-group">
                     <textarea class="form-control" rows="5" id="text" placeholder="Text to convert"></textarea>
-                    <div class="checkbox">
+                </div>
+                <div class="form-group">
+                    <label>Text Type</label><br>
+                    <label class="radio-inline"><input checked type="radio" id="capitalText" name="radioGroup">M E M E</label>
+                        
+                    <label class="radio-inline"><input type="radio" id="funkyText" name="radioGroup">mEmE</label>
+                </div>
+                
+                <div class="form-group">
+                    <label>Formatting</label><br>
+                    <div class="checkbox" style="margin-top:0px;">
                       <label><input type="checkbox" checked="checked" id="messengerCheckBox">Messenger Friendly</label>
                     </div>
                 </div>
+                
                 <button id="submitBtn" class="btn btn-primary" style="width: 100%; height: 50px;">Convert</button>
                 
                 <button id="copyBtn" class="btn btn-default" style="width: 100%; height: 50px; margin-top: 10px;">Copy to Clipboard</button>
@@ -61,10 +72,14 @@
     <script>
         $(document).ready(function() {
             $("#submitBtn").click(function(){
-                if ($("#messengerCheckBox").is(":checked")) {
-                    convertTextForMessenger();
+                if($('#funkyText').is(':checked')) { 
+                    convertFunkyText(); 
                 } else {
-                    convertText();
+                    if ($("#messengerCheckBox").is(":checked")) {
+                        convertTextForMessenger();
+                    } else {
+                        convertText();
+                    }
                 }
             });
             
@@ -82,7 +97,7 @@
             var text = $("#text").val();
             var converted = "";
             
-            for (i=0;i<text.length;i++) {
+            for (var i=0;i<text.length;i++) {
                 temp = text.charAt(i);
                 
                 if (temp != ' ') {
@@ -106,7 +121,7 @@
             var lineLength = 0;
             var wordLength = 0;
             
-            for (i=0;i<text.length;i++) {
+            for (var i=0;i<text.length;i++) {
                 temp = text.charAt(i);
                 wordLength++;
                 
@@ -143,6 +158,25 @@
             converted = converted.substr(1,converted.length);
 
             $("#text").val(converted.toUpperCase());
+        }
+        
+        function convertFunkyText() {
+            var text = $("#text").val();
+            var converted = "";
+            
+            for (var i=0;i<text.length;i++) {
+                temp = text.charAt(i);
+                
+                if (i % 2 == 0) {
+                    temp = temp.toLowerCase();
+                } else {
+                    temp = temp.toUpperCase();
+                }
+                
+                converted = converted + temp;
+            }
+            
+            $("#text").val(converted);
         }
     </script>
 </body>
