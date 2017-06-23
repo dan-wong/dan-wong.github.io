@@ -1,0 +1,64 @@
+body {
+    font-family: 'Crimson Text', serif;
+}
+
+h1,h2{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h3,h4,h5,ul {
+    font-family: 'Crimson Text', serif;
+}
+
+ul {
+    font-size: 18px;
+}
+
+.nav>li {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+a {
+    color: #FF4081;
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.subtitle {
+    font-size: 15px;
+}
+
+p.bigFont {
+    font-size: 24px;
+}
+
+.titleNav {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.verticallyCentered {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subtitle.accent {
+    color: #303F9F;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FF4081;
+}
+
+

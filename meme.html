@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Meme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="meme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="meme/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div class="container-fluid">
+
+        <div class="row headerPanel">
+            <div class="col-sm-12 text-left">
+                <h1 style="color: white; padding-bottom: 10px;">Meme</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <br>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="text" placeholder="Text to convert"></textarea>
+                    <div class="checkbox">
+                      <label><input type="checkbox" checked="checked" id="messengerCheckBox">Messenger Friendly</label>
+                    </div>
+                </div>
+                <button id="submitBtn" class="btn btn-primary" style="width: 100%; height: 50px;">Convert</button>
+                
+                <button id="copyBtn" class="btn btn-default" style="width: 100%; height: 50px; margin-top: 10px;">Copy to Clipboard</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $("#submitBtn").click(function(){
+                if ($("#messengerCheckBox").is(":checked")) {
+                    convertTextForMessenger();
+                } else {
+                    convertText();
+                }
+            });
+            
+            $("#copyBtn").click(function(){
+                $("#text").select();
+                document.execCommand('copy');
+                
+                //Deselect text
+                document.getSelection().removeAllRanges();
+            }); 
+        });
+        
+        //Convert to M E M E text without formatting
+        function convertText() {
+            var text = $("#text").val();
+            var converted = "";
+            
+            for (i=0;i<text.length;i++) {
+                temp = text.charAt(i);
+                
+                if (temp != ' ') {
+                    converted = converted + ' ' + temp; 
+                }
+            }
+            
+            //Remove first space
+            converted = converted.substr(1,converted.length);
+
+            $("#text").val(converted.toUpperCase());
+        }
+        
+        //Convert to M E M E text with messenger formatting
+        function convertTextForMessenger() {
+            var text = $("#text").val();
+            var converted = "";
+            var word = "";
+            var currentLine = "";
+            
+            var lineLength = 0;
+            var wordLength = 0;
+            
+            for (i=0;i<text.length;i++) {
+                temp = text.charAt(i);
+                wordLength++;
+                
+                if (temp != ' ') {
+                    if (word == "") {
+                        word = temp;
+                    } else {
+                       word = word + ' ' + temp; 
+                    }
+                } else {
+                    //Check if the new word will push the line length over 16
+                    if (lineLength + wordLength > 16) {
+                        converted = converted + '\n' + word;
+                        lineLength = wordLength;
+                        wordLength = 0;
+                    } else {
+                        converted = converted + ' ' + word;
+                        lineLength += wordLength;
+                        wordLength = 0;
+                    }
+                    
+                    word = "";
+                }
+            }
+            
+            //Add last word
+            if (lineLength + wordLength > 16) {
+                converted = converted + '\n' + word;
+            } else {
+                converted = converted + ' ' + word;
+            }
+            
+            //Remove first space
+            converted = converted.substr(1,converted.length);
+
+            $("#text").val(converted.toUpperCase());
+        }
+    </script>
+</body>
+
+</html>
