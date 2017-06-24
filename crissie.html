@@ -67,10 +67,10 @@
         });
         
         $("#randomBtn").click(function(){
-            var random = Math.floor(Math.random() * 13);
-            var dogs = ['husky', 'pug', 'german%20shepherd', 'labrador', 'shitzu', 'pomeranian', 'maltese', 'golden%20retriever', 'cocker%20spaniel', 'terrier', 'shiba%20inu', 'rottweiler'];
+            var random = Math.floor(Math.random() * 12);
+            var dogs = ['husky', 'pug', 'german%20shepherd', 'labrador', 'shitzu', 'maltese', 'golden%20retriever', 'cocker%20spaniel', 'terrier', 'shiba%20inu', 'rottweiler'];
             
-            if (random == 12) {
+            if (random == 11) {
                 $("#picture").attr('src', 'daniel.jpg');
             } else {
                 var url = 'http://loremflickr.com/500/500/' + dogs[random];
