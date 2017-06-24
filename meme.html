@@ -45,6 +45,8 @@
                     <label class="radio-inline"><input checked type="radio" id="capitalText" name="radioGroup">M E M E</label>
                         
                     <label class="radio-inline"><input type="radio" id="funkyText" name="radioGroup">mEmE</label>
+                    
+                    <label class="radio-inline"><input type="radio" id="smallCaps" name="radioGroup">ᴍᴇᴍᴇ</label>
                 </div>
                 
                 <div class="form-group">
@@ -74,6 +76,8 @@
             $("#submitBtn").click(function(){
                 if($('#funkyText').is(':checked')) { 
                     convertFunkyText(); 
+                } else if ($('#smallCaps').is(':checked')) {
+                    convertSmallCaps();
                 } else {
                     if ($("#messengerCheckBox").is(":checked")) {
                         convertTextForMessenger();
@@ -98,10 +102,10 @@
             var converted = "";
             
             for (var i=0;i<text.length;i++) {
-                temp = text.charAt(i);
+                var temp = text.charAt(i);
                 
                 if (temp != ' ') {
-                    converted = converted + ' ' + temp; 
+                    converted += ' ' + temp; 
                 }
             }
             
@@ -122,23 +126,23 @@
             var wordLength = 0;
             
             for (var i=0;i<text.length;i++) {
-                temp = text.charAt(i);
+                var temp = text.charAt(i);
                 wordLength++;
                 
                 if (temp != ' ') {
                     if (word == "") {
                         word = temp;
                     } else {
-                       word = word + ' ' + temp; 
+                       word += ' ' + temp; 
                     }
                 } else {
                     //Check if the new word will push the line length over 16
                     if (lineLength + wordLength > 16) {
-                        converted = converted + '\n' + word;
+                        converted += '\n' + word;
                         lineLength = wordLength;
                         wordLength = 0;
                     } else {
-                        converted = converted + ' ' + word;
+                        converted += ' ' + word;
                         lineLength += wordLength;
                         wordLength = 0;
                     }
@@ -149,9 +153,9 @@
             
             //Add last word
             if (lineLength + wordLength > 16) {
-                converted = converted + '\n' + word;
+                converted += '\n' + word;
             } else {
-                converted = converted + ' ' + word;
+                converted += ' ' + word;
             }
             
             //Remove first space
@@ -160,12 +164,13 @@
             $("#text").val(converted.toUpperCase());
         }
         
+        //tHiS CoNvErTs tO FuNkY TeXt
         function convertFunkyText() {
             var text = $("#text").val().toLowerCase();
             var converted = "";
             
             for (var i=0;i<text.length;i++) {
-                temp = text.charAt(i);
+                var temp = text.charAt(i);
                 
                 if (i % 2 == 0) {
                     temp = temp.toLowerCase();
@@ -173,7 +178,56 @@
                     temp = temp.toUpperCase();
                 }
                 
-                converted = converted + temp;
+                converted += temp;
+            }
+            
+            $("#text").val(converted);
+        }
+        
+        
+        function convertSmallCaps(text) {
+            //OMG never again
+            var alphabet = {
+                    "a":"ᴀ",
+                    "b":"ʙ",
+                    "c":"ᴄ",
+                    "d":"ᴅ",
+                    "e":"ᴇ",
+                    "f":"ғ",
+                    "g":"ɢ",
+                    "h":"ʜ",
+                    "i":"ɪ",
+                    "j":"ᴊ",
+                    "k":"ᴋ",
+                    "l":"ʟ",
+                    "m":"ᴍ",
+                    "n":"ɴ",
+                    "o":"ᴏ",
+                    "p":"ᴘ",
+                    "q":"ǫ",
+                    "r":"ʀ",
+                    "s":"s",
+                    "t":"ᴛ",
+                    "u":"ᴜ",
+                    "v":"ᴠ",
+                    "w":"ᴡ",
+                    "x":"x",
+                    "y":"ʏ",
+                    "z":"ᴢ"};
+            
+            var converted="";
+            var text = $("#text").val().toLowerCase();
+            
+            for (var i=0;i<text.length;i++) {
+                var temp = text.charAt(i);
+                
+                if (temp == ' ') {
+                    converted += ' ';
+                } else if (alphabet[temp]) {
+                    converted += alphabet[temp];
+                } else {
+                    converted += temp;
+                }
             }
             
             $("#text").val(converted);
