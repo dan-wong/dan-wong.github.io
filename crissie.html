@@ -42,7 +42,7 @@
                 <br>
                 <button id="corgiBtn" class="btn btn-success" style="width: 100%; height: 50px;">Stress Less</button>
                 <button id="collieBtn" class="btn btn-danger" style="width: 100%; height: 50px; margin-top: 5px;">Stop Crying</button>
-                <button id="pugBtn" class="btn btn-primary" style="width: 100%; height: 50px; margin-top: 5px;">Crisse Please Stop</button>
+                <button id="randomBtn" class="btn btn-primary" style="width: 100%; height: 50px; margin-top: 5px;">Crisse Please Stop</button>
             </div>
         </div>
 
@@ -58,15 +58,32 @@
     <script>
         $("#corgiBtn").click(function(){
             $("#picture").attr('src', 'http://loremflickr.com/500/500/corgi');
+            vibrate();
         });
         
         $("#collieBtn").click(function(){
             $("#picture").attr('src', 'http://loremflickr.com/500/500/bordercollie');
+            vibrate();
         });
         
-        $("#pugBtn").click(function(){
-            $("#picture").attr('src', 'http://loremflickr.com/500/500/pug');
+        $("#randomBtn").click(function(){
+            var random = Math.floor(Math.random() * 13);
+            var dogs = ['husky', 'pug', 'german%20shepherd', 'labrador', 'shitzu', 'pomeranian', 'maltese', 'golden%20retriever', 'cocker%20spaniel', 'terrier', 'shiba%20inu', 'rottweiler'];
+            
+            if (random == 12) {
+                $("#picture").attr('src', 'daniel.jpg');
+            } else {
+                var url = 'http://loremflickr.com/500/500/' + dogs[random];
+                console.log(dogs[random]);
+                $("#picture").attr('src', url);
+            }
+            
+            vibrate();
         });
+        
+        function vibrate() {
+            navigator.vibrate(200);
+        }
         
     </script>
 </body>
