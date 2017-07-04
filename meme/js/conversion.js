@@ -1,5 +1,3 @@
-smallcaps = false;
-
 $(document).ready(function() {
     $("#submitBtn").click(function(){
         if($('#funkyText').is(':checked')) { 
@@ -42,10 +40,6 @@ function convertText() {
     //Remove first space
     converted = converted.substr(1,converted.length);
     
-    if (!smallcaps) {
-        converted.toUpperCase()
-    } 
-
     $("#text").val(converted);
 }
 
@@ -123,8 +117,6 @@ function convertFunkyText() {
 }
  
 function convertSmallCaps(text) {
-    smallcaps = true;
-    
     //OMG never again
     var alphabet = {
             "a":"ᴀ",

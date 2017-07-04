@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="meme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="meme/css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,6 +27,7 @@
 <body>
     <!-- Page Content -->
     <div class="container-fluid">
+        <div id="loading" class="loading">Loading&#8230;</div>
         <!--
         <div class="row headerPanel">
             <div class="col-sm-12 text-left">
@@ -53,13 +55,22 @@
     <script src="js/bootstrap.min.js"></script>
     
     <script>
+        $(document).ready(function() {
+            $("#loading").hide();
+        });
+                          
         $("#randomBtn").click(function(){
+            $("#loading").show();
+            
             var random = Math.floor(Math.random() * 15);
             var dogs = ['corgi', 'border%20collie', 'husky', 'pug', 'german%20shepherd', 'labrador', 'shitzu', 'maltese', 'golden%20retriever', 'cocker%20spaniel', 'terrier', 'shiba%20inu', 'rottweiler', 'puppy', 'puppies'];
             
             var url = 'http://loremflickr.com/500/500/' + dogs[random] + '?';
             console.log(dogs[random]);
-            $("#picture").attr('src', url);
+            
+            $("#picture").attr('src', url).load(function() {
+                $("#loading").fadeOut();
+            });
 
             vibrate();
         });
@@ -67,7 +78,6 @@
         function vibrate() {
             navigator.vibrate(200);
         }
-        
     </script>
 </body>
 
