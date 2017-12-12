@@ -88,10 +88,6 @@ function convertTextForMessenger() {
 
     //Remove first space
     converted = converted.substr(1,converted.length);
-    
-    if (!smallcaps) {
-        converted.toUpperCase()
-    } 
 
     $("#text").val(converted);
 }
