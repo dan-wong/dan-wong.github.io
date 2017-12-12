@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Daniel Wong">
+    <meta name="author" content="Daniel Wong">
 
     <title>Daniel Wong</title>
 
@@ -15,8 +15,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento+Sans" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,328 +26,279 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #303F9F">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" style="font-family: 'Julius Sans One', sans-serif; font-weight: bold; color: white;" href="#page-top"><b>Daniel Wong</b></a>
+<body>
+    <!-- Page Content -->
+    <div class="container-fluid">
+        <div class="row titleSection">
+            <div class="centerText">
+                <h1 class="titleText">Daniel Wong</h1>
+                <center><p class="subtitleText">4th Year Software Engineering</p></center>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#experience">Experience</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <br><br>
-                    <h1 style="margin-top: 80px;">Daniel Wong</h1>
-
-                    <br>
-                    <p class="bigFont">4th Year Software Engineer</p>
-
-                    <p class="subtitle">at the</p>
-                    <p class="bigFont">University of Auckland</p>
-
-                    <br><br><br>
-                    <a class="btn btn-default page-scroll" href="#experience">Click Me to Learn More!</a>
-                </div>
+            <div class="glyphPosition">
+                <center><img style="height: 30px; width: auto;" id="downarrow" src="img/downarrow.png"></center>
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Experience</h1>
-                </div>
-            </div>
+        <div class="row" id="experienceSection">
+            <div class="col-md-12">
+                <br><br>
+                <center><h1 style="color: black;">Experience</h1></center>
+                <br><br><br>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Software</h2>
-
-                    <div style="text-align: left">
-                        <h3>ERoad Software Intern</h3>
-                        <p class="subtitle accent">Jul 2017</p>
-                        <p>Worked as a Software Engineering Intern for a three week internship in the University break working on EROADs products.</p>
-                    </div>
-
-                    <div style="text-align: left">
-                        <h3>Tabula Rasa Website Development</h3>
-                        <p class="subtitle accent">Jan 2017 - April 2017</p>
-                        <p>Designed and developed a website for a wedding events client and managed deployment and setup of domain email accounts. Also produced graphical work such as brochures, menus etc. for the client. <a href="http://www.tabularasa.co.nz">Tabula Rasa Website</a></p>
-                    </div>
-
-                    <div style="text-align: left">
-                        <h3>Advance Retail Intern</h3>
-                        <p class="subtitle accent">Nov 2016 - Jan 2017</p>
-                        <p>Summer Intern designing and developing interfaces for web based applications using HTML5 technologies (Sencha ExtJS)</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <h2>Other</h2>
-
-                    <div style="text-align: left">
-                        <h3>Tutor House Tutor</h3>
-                        <p class="subtitle accent">May 2015 - Present</p>
-                        <p>Tutoring CIE Mathematics and Business Studies one on one with students.</p>
-                    </div>
-
-                    <div style="text-align: left">
-                        <h3>Tuakana Tutor</h3>
-                        <p class="subtitle accent">Sep 2016 - Present</p>
-                        <p>Tutored ENGGEN 131 to Tuakana Students once a week in a tutorial session going over concepts covered in lectures and helping students with their lab work.</p>
-                    </div>
-
-                    <div style="text-align: left">
-                        <h3>Vector Arena</h3>
-                        <p class="subtitle accent">Nov 2015 - Oct 2016</p>
-                        <p>Part of the Customer Satisfacation team working in various outlets. Responsibilities include operating a POS machine, serving customers in a restaurant settings, and bartending. Also did work in Corporate settings and banquets.</p>
-                    </div>
-
-                    <div style="text-align: left">
-                        <h3>InPlay SD Stadium Reporter</h3>
-                        <p class="subtitle accent">May 2015 - Feb 2016</p>
-                        <p>Communicating football match information quickly and effectively over the phone while tracking stats such as goals, corners etc. to a sports data company</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>About</h1>
-
-                    <div class="col-md-6">
-                        <h2>Education</h2>
-                        <div style="text-align: left">
-                            <h3>University of Auckland</h3>
-                            <p class="subtitle accent">2015 - present</p>
-                            <p>SOFTENG</p>
-                            <ul>
-                                <li>306 - Software Engineering Design 2</li>
-                                <li>370 - Operating Systems</li>
-                                <li>325 - Software Architecture</li>
-                                <li>350 - Human Computer Interaction</li>
-                                <li>351 - Fundamentals of Database Systems</li>
-                                <li>364 - Computer Networks</li>
-                                <li>206 - Software Engineering Design 1</li>
-                                <li>211 - Software Engineering Theory</li>
-                                <li>250 - Introduction to Data Structures and Algorithims</li>
-                                <li>251 - Object Oriented Software Construction</li>
-                                <li>254 - Quality Assurance</li>
-                            </ul>
-
-                            <p>COMPSCI</p>
-                            <ul>
-                                <li>367 - Artifical Intelligence</li>
-                            </ul>
-
-                            <p>ENGSCI</p>
-                            <ul>
-                                <li>213 - Mathematical Modelling 2SE</li>
-                            </ul>
-
-                            <p>COMPSYS</p>
-                            <ul>
-                                <li>201 - Fundamentals of Computer Engineering</li>
-                            </ul>
-                            <!--
-                            <hr>
-
-                            <h3>ACG Sunderland College</h3>
-                            <p class="subtitle accent">2010 - 2014</p>
-
-                            <ul>
-                                <li>A2 Mathematics, Business Studies, Physics</li>
-                                <li>AS English Language, Classical Studies</li>
-                                <li>Deputy House Leader (2014)</li>
-                                <li>Associate House Leader (2011)</li>
-                            </ul>
-                        -->
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <!-- ERoad -->
+                        <div class="card blue">
+                            <h3>ERoad Intern</h3>
+                            <p class="date">July 2017 - July 2017</p>
+                            <br>
+                            <p>Worked during the University Holiday for 3 weeks in an agile team on their components such as an online portal and ELD.</p>
                         </div>
+
+                        <!-- Tabula Rasa -->
+                        <div class="card blue">
+                            <h3>Tabula Rasa Web Development</h3>
+                            <p class="date">Jan 2017 - April 2017</p>
+                            <br>
+                            <p>Designed and developed a website for a wedding events client and managed deployment and setup of domain email accounts. Also produced graphical work such as brochures, menus etc. for the client</p>
+                        </div>
+
+                        <!-- Advance Retail -->
+                        <div class="card blue">
+                            <h3>Advance Retail Intern</h3>
+                            <p class="date">Nov 2016 - Jan 2017</p>
+                            <br>
+                            <p>Summer Intern designing and developing interfaces for web based applications using HTML5 technologies (Sencha ExtJS)</p>
+                        </div>
+
+
+                        <!-- InPlay Stadium Reporter --><!--
+                        <div class="card secondary">
+                            <h3 style="margin-bottom: 0px;">InPlay SD Stadium Reporter</h3>
+                            <p class="date">May 2015 - Feb 2016</p>
+                            <p>Communicating football match information quickly and effectively over the phone while tracking stats such as goals, corners etc. to a sports data company</p>
+                        </div>-->
                     </div>
 
-                    <div class="col-md-6">
-                        <h2>Skills</h2>
+                    <div class="col-md-5">
+                        <!-- Tutor House -->
+                        <div class="card secondary">
+                            <h3 style="margin-bottom: 0px;">Tutor House</h3>
+                            <p class="date">May 2015 - Present</p>
+                            <br>
+                            <p>Worked as a tutor tutoring CIE Mathematics and Business Studies one on one with students.</p>
+                        </div>
 
-                        <div class="row">
-                            <div class="col-md-6" style="text-align: left;">
-                                <h3>Software</h3>
+                        <!-- Tuakana -->
+                        <div class="card secondary">
+                            <h3 style="margin-bottom: 0px;">Tuakana Tutor</h3>
+                            <p class="date">Sep 2016 - Present</p>
+                            <p>Tutored ENGGEN 131 to Tuakana Students once a week in a tutorial session going over concepts covered in lectures and helping students with their lab work.</p>
+                        </div>
 
+                        <!-- Vector Arena -->
+                        <div class="card secondary">
+                            <h3 style="margin-bottom: 0px;">Vector Arena</h3>
+                            <p class="date">Nov 2015 - Oct 2016</p>
+                            <p>Part of the Customer Satisfacation team working in various outlets. Responsibilities include operating a POS machine, serving customers in a restaurant settings, and bartending. Also did work in Corporate settings and banquets.</p>
+                        </div>
+
+                        <br><br><br><br>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row" id="educationSection">
+            <div class="col-md-12">
+                <br><br>
+                <center><h1 class="white">Education</h1></center>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2">
+                        <h3 style="font-size: 35px;" class="white">The University of Auckland</h3>
+                        <p class="white">2015 - 2018</p>
+                        <p class="white">Bachelor of Engineering (Hons)<br>Software Engineering</p>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2">
+                        <p class="white"><b>SOFTENG</b></p>
+                        <ul>
+                            <li class="white">370 - Operating Systems</li>
+                            <li class="white">364 - Computer Networks</li>
+                            <li class="white">351 - Fundamentals of Database Systems</li>
+                            <li class="white">350 - Human Computer Interaction</li>
+                            <li class="white">325 - Software Architecture</li>
+                            <li class="white">306 - Software Engineering Design 2</li>
+                            <li class="white">254 - Quality Assurance</li>
+                            <li class="white">251 - Object Oriented Software Construction</li>
+                            <li class="white">250 - Introduction to Data Structures and Algorithims</li>
+                            <li class="white">211 - Software Engineering Theory</li>
+                            <li class="white">206 - Software Engineering Design 1</li>
+                        </ul>
+                        <br><br><br>
+                    </div>
+
+                    <div class="col-md-5">
+                        <p class="white"><b>COMPSCI</b></p>
+                        <ul>
+                            <li class="white">367 - Artifical Intelligence</li>
+                        </ul>
+
+                        <p class="white"><b>ENGSCI</b></p>
+                        <ul>
+                            <li class="white">213 - Mathematical Modelling 2SE</li>
+                        </ul>
+
+                        <p class="white"><b>COMPSYS</b></p>
+                        <ul>
+                            <li class="white">201 - Fundamentals of Computer Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row" id="skillsSection">
+            <div class="col-md-12">
+                <br><br><br>
+                <center><h1>Skills</h1></center>
+                <br><br>
+
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3" style="padding-right: 30px;">
+                        <h2>Software</h2>
+
+                        <ul>
+                            <li>Intellij</li>
+                            <li>Eclipse</li>
+                            <li>Android Studio</li>
+                            <li>Sencha Architect</li>
+                            <li>Microsoft Visual Studio</li>
+                            <li>Matlab</li>
+                            <li>Adobe Creative Cloud Suite
                                 <ul>
-                                    <li>Intellij</li>
-                                    <li>Eclipse</li>
-                                    <li>Android Studio</li>
-                                    <li>Microsoft Visual Studio</li>
-                                    <li>Matlab</li>
-                                    <li>Sencha Architect</li>
-                                    <li>Adobe Creative Cloud Suite
-                                        <ul>
-                                            <li>Adobe Photoshop</li>
-                                            <li>Adobe Premiere Pro</li>
-                                            <li>Adobe After Effects</li>
-                                        </ul>
-                                    </li>
+                                    <li>Premiere Pro</li>
+                                    <li>Photoshop</li>
+                                    <li>After Effects</li>
+                                    <li>InDesign</li>
+                                    <li>Audition</li>
                                 </ul>
-                            </div>
+                            </li>
+                        </ul>
 
-                            <div class="col-md-6" style="text-align: left;">
-                                <h3>Programming</h3>
+                        <br><br><br><br><br>
+                    </div>
 
-                                <ul>
-                                    <li>Java</li>
-                                    <li>C</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Python</li>
-                                    <li>Javascript</li>
-                                    <li>Matlab</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-3 col-md-offset-1" style="padding-left: 30px;">
+                        <h2>Programming</h2>
 
-                        <hr>
+                        <ul>
+                            <li>Java</li>
+                            <li>HTML/CSS</li>
+                            <li>Javascript</li>
+                            <li>C</li>
+                            <li>Matlab</li>
+                            <li>Python</li>
+                        </ul>
 
-                        <h2>Highlights</h2>
-                        <div style="text-align: left">
-                            <h3>Competitions</h3>
-                            <ul>
-                                <li>Microsoft Imagine Cup Challenge Finalist (2017)</li>
-                                <li>MYOB Marketing Competition Finalist (2015)</li>
-                                <li>MIND Microsoft Ad Challenge Finalist (2015)</li>
-                                <li>Fair Go Ad Awards Finalist (2013)</li>
-                                <li>Villars Cup for Outstanding Service to the College (2014)</li>
-                            </ul>
-
-                            <h3>Extra-Curricular</h3>
-                            <ul>
-                                <li>Engineering Revue 2017 Audio/Visual Director</li>
-                                <li>Engineering Revue 2016 Video Editor and Skit Writer</li>
-                            </ul>
-                        </div>
+                        <br><br>
                     </div>
                 </div>
+                <!-- /.row -->
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Projects</h1>
-                    <a href="https://github.com/dan-wong">My Github</a>
+        <div class="row" id="highlightsSection">
+            <div class="col-md-12">
+                <br><br><br>
+                <center><h1 style="color: black;">Highlights</h1></center>
+                <br><br>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div style="text-align: left">
-                                <h3>Locater</h3>
-                                <p class="subtitle accent">Working on it now!</p>
-                                <p>Locate your friends without the internet! Simply send your friends a text message and they'll have access to your location! <a href="https://play.google.com/store/apps/details?id=daniel.locater">Download</a></p>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3" style="padding-right: 30px;">
+                        <h2>Competitions</h2>
 
-                                <br>
+                        <ul>
+                            <li><b>Microsoft Imagine Cup Challenge Finalist (2016)</b></li>
+                            <li><b>MYOB Marketing Competition Finalist (2015)</b></li>
+                            <li><b>MIND Microsoft Ad Challenge Finalist (2015)</b></li>
+                            <li>Fair Go Ad Awards Finalist (2013)</li>
+                            <li>Villars Cup for Outstanding Service to the College (2014)</li>
+                        </ul>
 
-                                <h3>Tabula Rasa Website Development</h3>
-                                <p class="subtitle accent">Jan 2017 - April 2017</p>
-                                <p>Website development for a wedding events client. <a href="http://www.tabularasa.co.nz">Tabula Rasa Website</a></p>
+                        <br>
 
-                                <hr>
+                        <h2>Extra-Curricular</h2>
+                        <ul>
+                            <li>Engineering Revue 2017 Audio/Visual Director</li>
+                            <li>Engineering Revue 2016 Video Editor and Skit Writer</li>
+                        </ul>
 
-                                <h3>TapWars</h3>
-                                <p class="subtitle accent">Jul 2015 - Aug 2015</p>
-                                <p>Race your friends in a game of tapping fury! Tap to 100, 200 or even up to 500 taps! <a href="https://play.google.com/store/apps/details?id=com.dawnlegion.daniel.tapwarsv2">Download</a></p>
-
-                            </div>
-                        </div>
+                        <br><br><br><br>
                     </div>
                 </div>
+                <!-- /.row -->
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Contact</h1>
-                    <br><br>
-                    <div class="row">
-                        <div class="col-md-6" style="text-align: left;">
-                            <h2>Daniel Wong</h2>
-                            <p>Email: <a href="mailto:dan_wong@outlook.com">dan_wong@outlook.com</a></p>
-                            <p>Github: <a href="https://github.com/dan-wong">Click Here</a></p>
-                            <p>LinkedIn: <a href="https://www.linkedin.com/in/daniel-wong-580490107/">Connect With Me</a></p>
-                        </div>
+        <div class="row" id="contactSection">
+            <div class="col-md-12">
+                <br><br><br>
+                <center><h1 class="white">Contact</h1></center>
+                <br><br>
 
-                        <div class="col-md-6" style="text-align: right;">
-                            <h2>Referee</h2>
-                            <p>Lawrence Stephens<br>Deputy Principal at ACG Sunderland<br>Email: <a href="mailto:lawrence.stephens@acgedu.com">lawrence.stephens@acgedu.com</a></p>
-                        </div>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3" style="padding-right: 30px;">
+                        <h2 class="white">Daniel Wong</h2>
+                        <p class="white">
+                            <b>E/</b> dan_wong@outlook.com<br>
+                            <b>M/</b> 0226595605<br>
+                            <i>References available on request</i>
+                        </p>
+                        <br><br><br><br>
+                    </div>
+
+                    <div class="col-md-3 col-md-offset-1">
+                        <h2 class="white">My Stuff</h2>
+                        <p class="white">
+                            <a href="https://github.com/dan-wong">Github</a><br>
+                            <a href="https://www.linkedin.com/in/daniel-wong-580490107/">LinkedIn</a><br>
+                            <a href="https://play.google.com/store/apps/details?id=daniel.locater">Locater App</a>
+                        </p>
                     </div>
                 </div>
+                <!-- /.row -->
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One" rel="stylesheet">
+    </div>
+    <!-- /.container -->
 
-    <!-- jQuery -->
+    <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+    <!-- Custom JS -->
+    <script src="js/customJS.js"></script>
 
 </body>
 

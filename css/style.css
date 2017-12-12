@@ -1,64 +1,120 @@
 body {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Quattrocento Sans', sans-serif;
+    overflow-x: hidden;
 }
 
-h1,h2{
-    font-family: 'Julius Sans One', sans-serif;
-}
-
-h3,h4,h5,ul {
-    font-family: 'Crimson Text', serif;
-}
-
-ul {
-    font-size: 18px;
-}
-
-.nav>li {
-    font-family: 'Julius Sans One', sans-serif;
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {
     font-size: 60px;
+    color: #0091EA;
 }
 
-a {
-    color: #FF4081;
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+p, ul, li {
     font-size: 18px;
 }
 
-p {
-    font-size: 18px;
+a, a:visited {
+    color: #FAFAFA;
 }
 
-p.subtitle {
-    font-size: 15px;
+a:hover {
+    color: #E91E63;
 }
 
-p.bigFont {
-    font-size: 24px;
+.titleSection {
+    background-color: #0091EA;
+    height: 100vh;
+    width: 100vw;
 }
 
-.titleNav {
-    font-family: 'Julius Sans One', sans-serif;
+.titleText {
+    font-size: 90px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
 }
 
-.verticallyCentered {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.subtitleText {
+    font-size: 20px;
+    color: #EEEEEE;
 }
 
-.subtitle.accent {
-    color: #303F9F;
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus {
+.glyphPosition {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.glyphPosition:hover {
+    transform: scale(1.5);
+}
+
+.card {
+    -webkit-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.55);
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.55);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card.blue {
+    border-left: 10px solid #0091EA;
+}
+
+.card.secondary {
+    border-left: 10px solid #00EE75;
+}
+
+.white {
     color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: #FF4081;
+.date {
+    font-size: 17px;
+    color: #00B459;
+    margin-top: 0px;
 }
 
+#experienceSection {
+    background-color: #EEEEEE;
+}
 
+#educationSection {
+    background-color: #0091EA;
+}
+
+#highlightsSection {
+    background-color: #EEEEEE;
+}
+
+#skillsSection {
+    background-color: #FAFAFA;
+}
+
+#contactSection {
+    background-color: #616161;
+}
