@@ -39,6 +39,7 @@ function convertText() {
 
     //Remove first space
     converted = converted.substr(1,converted.length);
+    converted = converted.toUpperCase();
     
     $("#text").val(converted);
 }
@@ -88,6 +89,7 @@ function convertTextForMessenger() {
 
     //Remove first space
     converted = converted.substr(1,converted.length);
+    converted = converted.toUpperCase();
 
     $("#text").val(converted);
 }
