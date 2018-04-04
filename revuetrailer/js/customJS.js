@@ -1,6 +1,5 @@
 $( document ).ready(function() {
     if (getParameterByName('mobile')) {
-    
     } else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
         document.getElementById('containerWindow').innerHTML = '<h2 style="color: white; margin-top: 5rem;">Daniel was lazy and didn\'t want to make it mobile compatible</h2>';
     }
@@ -9,10 +8,12 @@ $( document ).ready(function() {
 function move() {
     var elem = document.getElementById("bar"); 
     var width = 1;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 40);
     function frame() {
         if (width >= 100) {
             clearInterval(id);
+        } else if (width >= 70) {
+            width = 30;
         } else {
             width++; 
             elem.style.width = width + '%'; 
