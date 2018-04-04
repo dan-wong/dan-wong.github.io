@@ -20,4 +20,5 @@ function move() {
 
 function noDialog() {
     alert('No');
+    document.getElementById("radio1").checked = true; 
 }
