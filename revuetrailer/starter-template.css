@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'comicsans';
+  src: url('fonts/comicsans.otf') format('opentype');
+}
+.comicsans {
+  font-family: 'comicsans';
+}
+body {
+  background-color: black;
+  font-family: 'comicsans';
+}
+h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 6em;
+  color: white;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+h4 {
+  padding-top: 5px;
+  text-align: center;
+}
+p {
+  color: #757575; 
+  font-size: 15px;
+  opacity: 0.75;
+}
+.outerbox {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.stripe {
+  height: 15px;
+  margin-top: 5px;
+  transform: skew(20deg);
+}
+.stripe.stripeOne {
+  width: 100%;
+  background-color: #0D47A1;
+}
+.stripe.stripeTwo {
+  width: 75%;
+  background-color: #1565C0;
+}
+.stripe.stripeThree {
+  width: 50%;
+  background-color: #1976D2;
+}
+.box {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 300px;
+}
+.box.leftBox {
+  background-color: #FF9800;
+}
+.box.middleBox {
+  background-color: #9E9E9E;
+}
+.box.rightBox {
+  background-color: #616161;
+}
+.downloadBtn {
+  font-family: 'Russo One', sans-serif;
+  font-size: 48px; 
+  font-weight: bold; 
+  color: black; 
+  width: 350px;
+}
+#progress_bar {
+  width: 100%;
+  background-color: grey;
+}
+#bar {
+  width: 1%;
+  height: 30px;
+  background-color: #1565C0;
+}
