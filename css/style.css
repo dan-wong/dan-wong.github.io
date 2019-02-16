@@ -1,120 +1,57 @@
 body {
-    font-family: 'Quattrocento Sans', sans-serif;
-    overflow-x: hidden;
+  font-family: 'Inconsolata', monospace;
+  /* background-color: #f2e3c6; */
+  background-color: #A7DBDB;
+  margin: 0 auto;
+}
+
+@media (max-width: 499px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1099px) and (min-width: 500px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1100px) {
+  body {
+    width: 60%;
+  }
 }
 
 h1, h2 {
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+h3, h4, h5 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
 }
 
 h1 {
-    font-size: 60px;
-    color: #0091EA;
+  font-size: 4em;
 }
 
-h2 {
-    font-size: 35px;
+.title {
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
 
-h3 {
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 0px;
+.subtitle {
+  margin-top: 0px;
+  padding-left: 3px;
 }
 
-p, ul, li {
-    font-size: 18px;
+.titleblock {
+  margin-top: 3em;
+  margin-bottom: 2em;
 }
 
-a, a:visited {
-    color: #FAFAFA;
-}
-
-a:hover {
-    color: #E91E63;
-}
-
-.titleSection {
-    background-color: #0091EA;
-    height: 100vh;
-    width: 100vw;
-}
-
-.titleText {
-    font-size: 90px;
-    color: white;
-    font-weight: 800;
-    text-align: center;
-}
-
-.subtitleText {
-    font-size: 20px;
-    color: #EEEEEE;
-}
-
-.centerText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.glyphPosition {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    transition: all .2s ease-in-out;
-}
-
-.glyphPosition:hover {
-    transform: scale(1.5);
-}
-
-.card {
-    -webkit-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.55);
-    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.55);
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    background-color: white;
-}
-
-.card.blue {
-    border-left: 10px solid #0091EA;
-}
-
-.card.secondary {
-    border-left: 10px solid #00EE75;
-}
-
-.white {
-    color: white;
-}
-
-.date {
-    font-size: 17px;
-    color: #00B459;
-    margin-top: 0px;
-}
-
-#experienceSection {
-    background-color: #EEEEEE;
-}
-
-#educationSection {
-    background-color: #0091EA;
-}
-
-#highlightsSection {
-    background-color: #EEEEEE;
-}
-
-#skillsSection {
-    background-color: #FAFAFA;
-}
-
-#contactSection {
-    background-color: #616161;
+.data {
+  padding-left: 3px;
+  margin-bottom: 3em;
 }
