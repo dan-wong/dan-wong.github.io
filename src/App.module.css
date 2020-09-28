@@ -1,0 +1,33 @@
+.box {
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 8em;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 5em;
+  margin: 2em 0em 0em 0em;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Roboto Slab", serif;
+  margin-top: 0px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-family: "Roboto Slab", serif;
+    font-size: 3em;
+    margin: 1em 0em 0em 0em;
+    text-align: center;
+  }
+
+  .box {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 3em;
+  }
+}
