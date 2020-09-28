@@ -12,8 +12,13 @@
     "react-dom": "^16.12.0",
     "react-images": "^1.1.0-beta.0",
     "react-photo-gallery": "^8.0.0",
+<<<<<<< HEAD
     "react-scripts": "^3.4.3",
     "serialize-javascript": "2.1.1"
+=======
+    "react-scripts": "3.3.0",
+    "serialize-javascript": "3.1.0"
+>>>>>>> cc838c17da2a9ffa2d131d90c93fb7c42337e463
   },
   "scripts": {
     "start": "react-scripts start",
