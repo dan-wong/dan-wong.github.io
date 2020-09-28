@@ -2,7 +2,7 @@
   "name": "photo-gallery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://danwong.nz/photo-gallery",
+  "homepage": "https://danwong.nz/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,7 +12,7 @@
     "react-dom": "^16.12.0",
     "react-images": "^1.1.0-beta.0",
     "react-photo-gallery": "^8.0.0",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.4.3",
     "serialize-javascript": "2.1.1"
   },
   "scripts": {
