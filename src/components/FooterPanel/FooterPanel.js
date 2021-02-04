@@ -30,12 +30,7 @@ function FooterPanel() {
         <footer className={styles.parent}>
             <Container fluid>
                 <Row>
-                    <Col 
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
-                    >
-                        <p>{leftText}</p>
-                    </Col>
+                    <Col><p>{leftText}</p></Col>
                     <Col 
                         className={styles.rightAlign}
                         onMouseEnter={handleMouseEnter}
