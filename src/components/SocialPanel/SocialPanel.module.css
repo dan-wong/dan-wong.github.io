@@ -1,0 +1,14 @@
+.parent {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.icon {
+    margin: 0 1rem 0 1rem;
+}
+
+@media (max-width: 1200px) {
+    .icon {
+        margin: 0 10px 0 10px;
+    }
+}
