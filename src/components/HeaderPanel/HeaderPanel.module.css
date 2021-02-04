@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
     .title {
         font-family: "Roboto Slab", serif;
         font-size: 3em;

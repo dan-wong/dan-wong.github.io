@@ -1,0 +1,10 @@
+.parent {
+    background-color: black;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+.rightAlign {
+    text-align: right;
+}

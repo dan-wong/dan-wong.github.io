@@ -140,7 +140,7 @@ export const photos = [
     height: 3
   },
   {
-    src: "https://drscdn.500px.org/photo/1027984830/q%3D80_h%3D300/v2?sig=66eb20086e28c977e1f68d3d85e65f658a6d6b7aa92c6c611e84a40e83e26a1d",
+    src: "https://drscdn.500px.org/photo/1027984830/q%3D80_m%3D1500/v2?sig=7ad6bf72357e581dc3cdb01aeb1cb0513f393416eaf60d2d09b5503c4fa2f835",
     width: 6,
     height: 4
   },
