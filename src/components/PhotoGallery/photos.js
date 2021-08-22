@@ -153,5 +153,10 @@ export const photos = [
     src: "https://drscdn.500px.org/photo/1027985170/q%3D80_m%3D1000/v2?sig=dee9ee746feaf4ad85a6aaeb2337321eab465321475f4d4880e02bf630971c0c",
     width: 2,
     height: 3
+  },
+  {
+    src: "https://drscdn.500px.org/photo/1036154406/q%3D80_m%3D1500/v2?sig=a195c23a41d128a8e938aeca70d8c4e5dd2a0ed6772c183fe5cbe1db6cee1b66",
+    width: 2,
+    height: 3
   }
 ];
